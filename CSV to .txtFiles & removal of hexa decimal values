@@ -1,0 +1,27 @@
+import csv
+from tqdm import tqdm
+if __name__ == "__main__":
+    with open('WorldOil_fulldata.csv', encoding="UTF-8") as csv_file:
+
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        line_count = 0
+        for row in tqdm(csv_reader):
+            print(len(row))
+            if line_count == 0:
+                print(f'Column names are {", ".join(row)}')
+                line_count += 1
+            else:
+                with open(f'corpus\\{row[0]}.txt','a') as outPut:
+                    outPut.write("f'{row[3]} {row[4]} {row[1]} {row[2]}'".encode("utf8"))#3412
+                line_count += 1
+        print(f'Processed {line_count} lines.')
+       
+==================================================================================================================
+        Removal of hexdecimal values
+==================================================================================================================
+        
+import string
+s = '\xe2\x80\x9chttp://www.google.com\xe2\x80\x9d blah blah#%#@$^blah'
+printable = set(string.printable)
+filter(lambda x: x in printable, s)
+'"%path name%" blah blah#%#@$^blah'
