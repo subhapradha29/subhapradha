@@ -1,0 +1,56 @@
+import glob
+from bs4 import BeautifulSoup
+import pandas as pd
+import datetime
+import re
+
+files =  glob.glob('C:/Users/p.subhapradha/Downloads/ache/worldoil/output/default/data_pages/www.oilandgasiq.com/*')
+#C:\Users\p.subhapradha\Downloads\output\hartenergy\data_pages\www.hartenergy.com
+df = pd.DataFrame(columns=['Heading', 'Paragraph', 'FileName', 'Date', 'Author'])
+for file in files:
+
+    print (file)
+    f = open(file, 'rb').read()
+    soup = BeautifulSoup(f,"html.parser")
+    data  = soup.find_all(text = True)
+
+ 
+    try:
+         author = soup.find("div",{"class":"float-left"}).a.text
+        # author = author.a.text
+         print(author)
+    
+    except Exception as e:
+         print('No Author')
+
+
+    heading = soup.find_all("h1")
+    #heading = soup.h3.a.text
+    print (heading)
+   # paragraph = soup.find("div",{"class":"content"})
+   
+    paragraph = soup.find_all("p")
+    #paragraph = paragraph.text
+
+    print (paragraph)
+    try:
+        date = soup.find("span",{"class":"text-date d-block mb-1"})
+        #date = date.__str__
+        print (date)
+    except Exception as e:
+        
+        print("none")
+
+    
+
+    Data = {'Paragraph': paragraph,
+             'Date': date,
+             'Author' : author,
+             'Heading': heading,
+             'FileName' : file
+            }
+
+    df = df.append(pd.Series(Data), ignore_index=True)
+
+df.to_csv('C:/Users/p.subhapradha/Documents/oilgasiq/oilgasiq.csv', header=True)
+
