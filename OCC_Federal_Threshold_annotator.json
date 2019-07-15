@@ -1,0 +1,71 @@
+{
+	"classes": [
+		{
+			"name": "News_with_Change_in_Threshold",
+			"color": "#ffe599",
+			"attributes": []
+		},
+		{
+			"name": "Proposal",
+			"color": "#b6d7a8",
+			"attributes": []
+		},
+		{
+			"name": "Regulatory_Authority",
+			"color": "#a4c2f4",
+			"attributes": []
+		},
+		{
+			"name": "Penalty",
+			"color": "#b4a7d6",
+			"attributes": []
+		},
+		{
+			"name": "Regulation",
+			"color": "#666666",
+			"attributes": []
+		},
+		{
+			"name": "Regulated_Entities",
+			"color": "#a64d79",
+			"attributes": []
+		},
+		{
+			"name": "Responsible_Person",
+			"color": "#e69138",
+			"attributes": []
+		},
+		{
+			"name": "Regulated_Activity",
+			"color": "#ff00ff",
+			"attributes": []
+		},
+		{
+			"name": "Regulated_Activity_Threshold",
+			"color": "#cc0000",
+			"attributes": []
+		},
+		{
+			"name": "Old_Level",
+			"color": "#3c78d8",
+			"attributes": []
+		},
+		{
+			"name": "New_Level",
+			"color": "#00ff00",
+			"attributes": []
+		},
+		{
+			"name": "Ambigous",
+			"color": "#b9bdc9",
+			"attributes": []
+		},
+		{
+			"name": "Act",
+			"color": "#e6f44d",
+			"attributes": []
+		}
+	],
+	"autostatus": true,
+	"importfromcorpus": false
+}

@@ -1,0 +1,86 @@
+{
+	"classes": [
+		{
+			"name": "Weather conditions",
+			"color": "#434343",
+			"attributes": []
+		},
+		{
+			"name": "Natural calamities",
+			"color": "#ff0000",
+			"attributes": []
+		},
+		{
+			"name": "Violence",
+			"color": "#e06666",
+			"attributes": []
+		},
+		{
+			"name": "Riot",
+			"color": "#660000",
+			"attributes": []
+		},
+		{
+			"name": "Middle East tensions",
+			"color": "#eecccc",
+			"attributes": []
+		},
+		{
+			"name": "Elections",
+			"color": "#ff9900",
+			"attributes": []
+		},
+		{
+			"name": "War tension",
+			"color": "#073763",
+			"attributes": []
+		},
+		{
+			"name": "Sanctions",
+			"color": "#00ff00",
+			"attributes": []
+		},
+		{
+			"name": "Commodity trading",
+			"color": "#e69138",
+			"attributes": []
+		},
+		{
+			"name": "Trade war",
+			"color": "#7f6000",
+			"attributes": []
+		},
+		{
+			"name": "Diplomacy",
+			"color": "#9900ff",
+			"attributes": []
+		},
+		{
+			"name": "OPEC",
+			"color": "#ea9999",
+			"attributes": []
+		},
+		{
+			"name": "Brexit",
+			"color": "#eb731c",
+			"attributes": []
+		},
+		{
+			"name": "Author",
+			"color": "#660000",
+			"attributes": []
+		},
+		{
+			"name": "Date",
+			"color": "#6d9eeb",
+			"attributes": []
+		},
+		{
+			"name": "Heading",
+			"color": "#ff9900",
+			"attributes": []
+		}
+	],
+	"autostatus": true,
+	"importfromcorpus": false
+}
