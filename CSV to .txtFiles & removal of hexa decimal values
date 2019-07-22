@@ -1,7 +1,7 @@
 import csv
 from tqdm import tqdm
 if __name__ == "__main__":
-    with open('WorldOil_fulldata.csv', encoding="UTF-8") as csv_file:
+    with open('filename.csv', encoding="UTF-8") as csv_file:
 
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
