@@ -4,8 +4,8 @@ import pandas as pd
 import datetime
 import re
 
-files =  glob.glob('C:/Users/p.subhapradha/Downloads/ache/worldoil/output/default/data_pages/www.oilandgasiq.com/*')
-#C:\Users\p.subhapradha\Downloads\output\hartenergy\data_pages\www.hartenergy.com
+files =  glob.glob('path of the datapages /*')
+
 df = pd.DataFrame(columns=['Heading', 'Paragraph', 'FileName', 'Date', 'Author'])
 for file in files:
 
@@ -52,5 +52,5 @@ for file in files:
 
     df = df.append(pd.Series(Data), ignore_index=True)
 
-df.to_csv('C:/Users/p.subhapradha/Documents/oilgasiq/oilgasiq.csv', header=True)
+df.to_csv('path of the destination folder/filename.csv', header=True)
 
